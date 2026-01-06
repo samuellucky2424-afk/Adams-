@@ -123,6 +123,16 @@ export const INITIAL_CONTENT: AppContent = {
         { name: "Body waxing", description: "Smooth skin hair removal.", image: "" },
         { name: "Brazilian waxing", description: "Complete hair removal.", image: "" }
       ]
+    },
+    {
+      id: "pos",
+      title: "POS & Financial",
+      iconName: "CreditCard",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=80",
+      services: [
+        { name: "POS Services Available", description: "Withdrawals and transfers available at our counter.", image: "" },
+        { name: "We Accept POS Payments", description: "Pay for any salon service easily with your card.", image: "" }
+      ]
     }
   ],
   testimonials: [

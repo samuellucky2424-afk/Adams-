@@ -61,10 +61,13 @@ const Hero: React.FC = () => {
               <span className="text-white text-sm">Open Today: {new Date().getDay() === 0 ? '2:00 PM - 8:00 PM' : '8:00 AM - 9:00 PM'}</span>
             </div>
             {content.contact.posAvailable && (
-              <div className="inline-flex items-center bg-gold-600/80 backdrop-blur-sm px-4 py-2 rounded-full border border-gold-400/30">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-2 text-white"><rect width="18" height="12" x="3" y="6" rx="2"/><path d="M3 10h18"/></svg>
-                <span className="text-white text-xs font-bold uppercase tracking-wider">POS Available</span>
-              </div>
+              <button 
+                onClick={() => document.getElementById('services')?.scrollIntoView({behavior: 'smooth'})}
+                className="inline-flex items-center bg-gold-600 hover:bg-gold-500 transition-colors backdrop-blur-sm px-4 py-2 rounded-full border border-gold-400/30 cursor-pointer shadow-lg group"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-2 text-white group-hover:scale-110 transition-transform"><rect width="18" height="12" x="3" y="6" rx="2"/><path d="M3 10h18"/></svg>
+                <span className="text-white text-xs font-bold uppercase tracking-wider">POS Services Available</span>
+              </button>
             )}
           </div>
 
