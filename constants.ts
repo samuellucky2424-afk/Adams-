@@ -33,7 +33,7 @@ export const INITIAL_CONTENT: AppContent = {
       name: 'Splendour Vites Pharmacies & Store',
       tagline: 'Your Health, Our Priority',
       description: 'Providing quality pharmaceutical products and health essentials. We focus on trust, safety, and the wellness of our community.\n\nOur pharmacy is stocked with authentic medications and health supplements. We have qualified professionals available to provide expert consultation and guidance for your health needs.',
-      image: '/gallery/img20.jpg',
+      image: '/pharmacy.jpg',
       services: ['Prescription Medications', 'Over-the-counter Medicines', 'Health & Wellness Supplements', 'Personal Care Products', 'Expert Health Consultation'],
     }
   ],
