@@ -32,6 +32,11 @@ export interface ContactInfo {
   facebook?: string;
   instagram?: string;
   twitter?: string;
+  openingHours?: {
+    monSat: string;
+    sun: string;
+  };
+  posAvailable?: boolean;
 }
 
 export interface HeroSection {
