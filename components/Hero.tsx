@@ -54,10 +54,18 @@ const Hero: React.FC = () => {
             {hero.description}
           </p>
 
-          {/* Open Status - Hardcoded logic for demo */}
-          <div className="inline-flex items-center bg-black/50 backdrop-blur-sm px-4 py-2 rounded-full border border-white/10 mb-8">
-            <span className="w-2 h-2 rounded-full bg-green-500 mr-2 animate-pulse"></span>
-            <span className="text-white text-sm">Open Today until 8:00 PM</span>
+          {/* Open Status & POS badge */}
+          <div className="flex flex-wrap gap-3 mb-8">
+            <div className="inline-flex items-center bg-black/50 backdrop-blur-sm px-4 py-2 rounded-full border border-white/10">
+              <span className="w-2 h-2 rounded-full bg-green-500 mr-2 animate-pulse"></span>
+              <span className="text-white text-sm">Open Today: {new Date().getDay() === 0 ? '2:00 PM - 8:00 PM' : '8:00 AM - 9:00 PM'}</span>
+            </div>
+            {content.contact.posAvailable && (
+              <div className="inline-flex items-center bg-gold-600/80 backdrop-blur-sm px-4 py-2 rounded-full border border-gold-400/30">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-2 text-white"><rect width="18" height="12" x="3" y="6" rx="2"/><path d="M3 10h18"/></svg>
+                <span className="text-white text-xs font-bold uppercase tracking-wider">POS Available</span>
+              </div>
+            )}
           </div>
 
           {/* CTA Buttons */}

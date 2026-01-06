@@ -15,7 +15,12 @@ export const INITIAL_CONTENT: AppContent = {
     phoneDisplay: "0906 186 8772",
     whatsapp: "2349061868772",
     email: "info@splendourvites.com",
-    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.345678901234!2d6.2!3d6.25!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10439123456789ab%3A0x123456789abcdef0!2sAgbor%2C%20Delta!5e0!3m2!1sen!2sng!4v1234567890123"
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.345678901234!2d6.2!3d6.25!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10439123456789ab%3A0x123456789abcdef0!2sAgbor%2C%20Delta!5e0!3m2!1sen!2sng!4v1234567890123",
+    openingHours: {
+      monSat: "8:00 AM – 9:00 PM",
+      sun: "2:00 PM – 8:00 PM"
+    },
+    posAvailable: true
   },
   theme: {
     primaryColor: '#CA8A04',
@@ -48,7 +53,10 @@ export const INITIAL_CONTENT: AppContent = {
         { name: "Blow dry", description: "Professional blowouts.", image: "" },
         { name: "Balayage", description: "Hand-painted highlights.", image: "" },
         { name: "Hair extensions", description: "Premium quality hair extensions.", image: "" },
-        { name: "Dreadlocks", description: "Maintenance and styling.", image: "" }
+        { name: "Dreadlocks & Maintenance", description: "Complete care for your locks.", image: "" },
+        { name: "Braids of all styles", description: "From box braids to cornrows.", image: "" },
+        { name: "Tinting & Dyes", description: "Professional hair coloring.", image: "" },
+        { name: "Frontal installations", description: "Flawless wig and frontal fixing.", image: "" }
       ]
     },
     {
@@ -70,7 +78,8 @@ export const INITIAL_CONTENT: AppContent = {
       services: [
         { name: "Acne treatments", description: "Specialized facials.", image: "" },
         { name: "Eyebrow shaping", description: "Sculpting the perfect brow.", image: "" },
-        { name: "Microblading", description: "Semi-permanent make-up.", image: "" }
+        { name: "Microblading", description: "Semi-permanent make-up.", image: "" },
+        { name: "Fixing of eye lashes", description: "Professional lash extension.", image: "" }
       ]
     },
     {
@@ -81,7 +90,28 @@ export const INITIAL_CONTENT: AppContent = {
       services: [
         { name: "Acrylic nails", description: "Durable extensions.", image: "" },
         { name: "Manicure", description: "Nail shaping and care.", image: "" },
-        { name: "Pedicure", description: "Relaxing foot soak.", image: "" }
+        { name: "Pedicure", description: "Relaxing foot soak.", image: "" },
+        { name: "Nails design & care", description: "Artistic nail designs.", image: "" }
+      ]
+    },
+    {
+      id: "products",
+      title: "Hair Products",
+      iconName: "ShoppingBag",
+      image: "https://images.unsplash.com/photo-1594122230689-45899d9e6f69?auto=format&fit=crop&w=1200&q=80",
+      services: [
+        { name: "Production of hair products", description: "In-house manufactured premium products.", image: "" },
+        { name: "Sales of hair products", description: "Retail of top beauty brands.", image: "" }
+      ]
+    },
+    {
+      id: "entertainment",
+      title: "In-House Entertainment",
+      iconName: "Gamepad2",
+      image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=80",
+      services: [
+        { name: "PlayStation (PS4 & PS5)", description: "Enjoy latest games while you wait.", image: "" },
+        { name: "Snooker", description: "Classic snooker table for your leisure.", image: "" }
       ]
     },
     {
