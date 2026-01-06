@@ -29,8 +29,6 @@ const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) =
   return <>{children}</>;
 };
 
-import UnitPage from './pages/UnitPage';
-
 // Main Website Layout
 const PublicSite = () => {
   const [selectedService, setSelectedService] = useState<string>('');
