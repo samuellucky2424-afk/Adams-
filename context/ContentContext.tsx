@@ -29,6 +29,7 @@ export const ContentProvider: React.FC<{ children: React.ReactNode }> = ({ child
         // Force refresh services and contact from INITIAL_CONTENT if they've changed
         mergedContent.services = INITIAL_CONTENT.services;
         mergedContent.contact = INITIAL_CONTENT.contact;
+        mergedContent.gallery = INITIAL_CONTENT.gallery;
         
         setContent(mergedContent);
       } catch (e) {
