@@ -26,9 +26,9 @@ export const ContentProvider: React.FC<{ children: React.ReactNode }> = ({ child
         // Deep merge logic to ensure nested services are updated
         const mergedContent = { ...INITIAL_CONTENT, ...parsed };
         
-        // Force refresh services from INITIAL_CONTENT if they've changed
+        // Force refresh services and contact from INITIAL_CONTENT if they've changed
         mergedContent.services = INITIAL_CONTENT.services;
-        mergedContent.contact = { ...INITIAL_CONTENT.contact, ...parsed.contact };
+        mergedContent.contact = INITIAL_CONTENT.contact;
         
         setContent(mergedContent);
       } catch (e) {
