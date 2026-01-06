@@ -1,6 +1,5 @@
 import React from 'react';
-import { Facebook, Instagram, Twitter } from 'lucide-react';
-import { useContent } from '../context/ContentContext';
+import { Facebook, Instagram, Youtube } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const { content } = useContent();
@@ -17,14 +16,29 @@ const Footer: React.FC = () => {
           </div>
 
           <div className="flex space-x-6">
-            <a href="#" className="text-gray-400 hover:text-gold-500 transition-colors">
+            <a 
+              href={content.contact.instagram} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-gray-400 hover:text-gold-500 transition-colors"
+            >
               <Instagram size={24} />
             </a>
-            <a href="#" className="text-gray-400 hover:text-gold-500 transition-colors">
+            <a 
+              href={content.contact.facebook} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-gray-400 hover:text-gold-500 transition-colors"
+            >
               <Facebook size={24} />
             </a>
-            <a href="#" className="text-gray-400 hover:text-gold-500 transition-colors">
-              <Twitter size={24} />
+            <a 
+              href={content.contact.twitter} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-gray-400 hover:text-gold-500 transition-colors"
+            >
+              <Youtube size={24} />
             </a>
           </div>
         </div>

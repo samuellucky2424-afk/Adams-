@@ -1,21 +1,59 @@
 import { AppContent } from './types';
 
 export const INITIAL_CONTENT: AppContent = {
-  companyName: "Splendour Vites Beauty (Unisex) Saloon",
+  companyName: "Splendour Vites Enterprises",
+  units: [
+    {
+      id: 'saloon',
+      name: 'Splendour Vites Beauty (Unisex) Saloon',
+      tagline: 'Excellence in Hair & Beauty Care',
+      description: 'Experience premium styling and grooming at our state-of-the-art unisex salon. We combine modern techniques with professional care to give you the perfect look.\n\nOur salon offers a wide range of services including professional hairstyling, barbing, beauty treatments, and more. We pride ourselves on our hygiene standards and the use of premium products for all our clients.',
+      image: '/gallery/img1.jpg',
+      services: ['Professional Hairstyling', 'Barbing (Adults & Kids)', 'Wig & Frontal Installation', 'Manicure & Pedicure', 'Facial & Acne Treatment', 'Eyebrow Shaping & Microblading', 'Dreadlocks Maintenance', 'Bridal Styling'],
+      hours: 'Mon-Sat: 8:00 AM - 9:00 PM, Sun: 2:00 PM - 8:00 PM'
+    },
+    {
+      id: 'water',
+      name: 'Splendour Vites Table Water',
+      tagline: 'Pure. Clean. Refreshing.',
+      description: 'Our table water is produced under the highest standards of hygiene and quality assurance. We ensure that every drop is purified for your health and vitality.\n\nWe use advanced purification technologies and follow strict quality control protocols to ensure our water is safe for consumption. Our production facility is regularly inspected to maintain top hygiene standards.',
+      image: '/gallery/img15.jpg',
+      services: ['Multi-stage Purification', 'Quality Assurance Testing', 'Wholesale Distribution', 'Retail Sales', 'Multiple Packaging Sizes'],
+    },
+    {
+      id: 'hair-products',
+      name: 'Splendour Vites Hair Products & Production',
+      tagline: 'Professional Hair Care Solutions',
+      description: 'We manufacture premium hair products designed for all hair types. Our formulas are crafted to promote growth, shine, and overall hair health.\n\nOur research and development team focuses on creating products that are safe, effective, and tailored to the needs of our diverse clientele. We use natural ingredients where possible to ensure your hair gets the best care.',
+      image: '/gallery/img10.jpg',
+      services: ['Hair Growth Oils', 'Intensive Conditioning Treatments', 'Professional Grade Shampoos', 'Styling Gels & Pomades', 'Hair Maintenance Kits'],
+    },
+    {
+      id: 'pharmacy',
+      name: 'Splendour Vites Pharmacies & Store',
+      tagline: 'Your Health, Our Priority',
+      description: 'Providing quality pharmaceutical products and health essentials. We focus on trust, safety, and the wellness of our community.\n\nOur pharmacy is stocked with authentic medications and health supplements. We have qualified professionals available to provide expert consultation and guidance for your health needs.',
+      image: '/gallery/img20.jpg',
+      services: ['Prescription Medications', 'Over-the-counter Medicines', 'Health & Wellness Supplements', 'Personal Care Products', 'Expert Health Consultation'],
+    }
+  ],
   hero: {
-    title: "Redefine Your Splendour",
-    tagline: "Luxury Beauty & Grooming for Men & Women",
-    description: "Experience premium care in a relaxing environment designed for both men and women.",
-    bgImage: "https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+    title: "Excellence in Diverse Business Solutions",
+    tagline: "Quality Without Compromise",
+    description: "A conglomerate of premium brands committed to quality, health, and beauty. Discover our range of specialized services across multiple sectors.",
+    bgImage: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
     showRating: true
   },
   contact: {
-    address: "Shop 1, Ebenezer Plaza, Sakponba Road, Alihame Rd, Opposite Bolero Junction, Agbor 321102, Delta",
-    phone: "09061868772",
-    phoneDisplay: "0906 186 8772",
-    whatsapp: "2349061868772",
+    address: "Lagos, Nigeria",
+    phone: "08136544434",
+    phoneDisplay: "+234 813 654 4434",
+    whatsapp: "2348136544434",
     email: "splendourvites@gmail.com",
-    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.345678901234!2d6.2!3d6.25!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10439123456789ab%3A0x123456789abcdef0!2sAgbor%2C%20Delta!5e0!3m2!1sen!2sng!4v1234567890123",
+    mapUrl: "",
+    facebook: "https://www.facebook.com/share/19Jzw6pR7X/",
+    instagram: "https://www.instagram.com/splendour_vites?igsh=MWh4aW52aHowNzMwMw==",
+    twitter: "https://youtube.com/@splendourvites?si=nBtfoZVReKSDlUVG",
     openingHours: {
       monSat: "8:00 AM – 9:00 PM",
       sun: "2:00 PM – 8:00 PM"

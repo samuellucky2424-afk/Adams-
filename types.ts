@@ -69,8 +69,19 @@ export interface SiteSettings {
   };
 }
 
+export interface BusinessUnit {
+  id: string;
+  name: string;
+  tagline: string;
+  description: string;
+  image: string;
+  services?: string[];
+  hours?: string;
+}
+
 export interface AppContent {
   companyName: string;
+  units: BusinessUnit[];
   hero: HeroSection;
   contact: ContactInfo;
   services: ServiceCategory[];
