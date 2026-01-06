@@ -48,7 +48,7 @@ export const INITIAL_CONTENT: AppContent = {
     address: "Lagos, Nigeria",
     phone: "08136544434",
     phoneDisplay: "+234 813 654 4434",
-    whatsapp: "2348136544434",
+    whatsapp: "2349061868772",
     email: "splendourvites@gmail.com",
     mapUrl: "",
     facebook: "https://www.facebook.com/share/19Jzw6pR7X/",
