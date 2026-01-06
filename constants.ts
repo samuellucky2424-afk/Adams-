@@ -25,7 +25,7 @@ export const INITIAL_CONTENT: AppContent = {
       name: 'Splendour Vites Hair Products & Production',
       tagline: 'Professional Hair Care Solutions',
       description: 'We manufacture premium hair products designed for all hair types. Our formulas are crafted to promote growth, shine, and overall hair health.\n\nOur research and development team focuses on creating products that are safe, effective, and tailored to the needs of our diverse clientele. We use natural ingredients where possible to ensure your hair gets the best care.',
-      image: '/gallery/img10.jpg',
+      image: '/hair-products.jpg',
       services: ['Hair Growth Oils', 'Intensive Conditioning Treatments', 'Professional Grade Shampoos', 'Styling Gels & Pomades', 'Hair Maintenance Kits'],
     },
     {
