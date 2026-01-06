@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Splendour Vites Beauty (Unisex) Saloon</title>
+    <meta name="description" content="Luxury Beauty & Grooming for Men & Women in Agbor, Delta State." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <style id="theme-root">
+      :root {
+        /* Default Gold Theme */
+        --color-primary-400: #FACC15;
+        --color-primary-500: #EAB308;
+        --color-primary-600: #CA8A04;
+        --color-primary-700: #A16207;
+        
+        /* Default Nude/Background Theme */
+        --color-bg-50: #FDF8F6;
+        --color-bg-100: #F2E8E5;
+        --color-bg-200: #EADDD7;
+        
+        /* Default Dark/Text Theme */
+        --color-dark-900: #0F0F0F;
+        --color-dark-800: #1A1A1A;
+      }
+      
+      /* Smooth scrolling for anchor links */
+      html {
+        scroll-behavior: smooth;
+      }
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gold: {
+                400: 'var(--color-primary-400)',
+                500: 'var(--color-primary-500)',
+                600: 'var(--color-primary-600)',
+                700: 'var(--color-primary-700)',
+              },
+              nude: {
+                50: 'var(--color-bg-50)',
+                100: 'var(--color-bg-100)',
+                200: 'var(--color-bg-200)',
+              },
+              dark: {
+                900: 'var(--color-dark-900)',
+                800: 'var(--color-dark-800)',
+              }
+            },
+            fontFamily: {
+              sans: ['Lato', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react/": "https://esm.sh/react@18.2.0/",
+    "react-dom": "https://esm.sh/react-dom@18.2.0",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+    "lucide-react": "https://esm.sh/lucide-react@0.263.1?deps=react@18.2.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@6.22.3?deps=react@18.2.0,react-dom@18.2.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+  <body class="bg-nude-50 text-neutral-800 antialiased selection:bg-gold-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  </body>
+</html>
