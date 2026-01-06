@@ -17,7 +17,7 @@ export const INITIAL_CONTENT: AppContent = {
       name: 'Splendour Vites Table Water',
       tagline: 'Pure. Clean. Refreshing.',
       description: 'Our table water is produced under the highest standards of hygiene and quality assurance. We ensure that every drop is purified for your health and vitality.\n\nWe use advanced purification technologies and follow strict quality control protocols to ensure our water is safe for consumption. Our production facility is regularly inspected to maintain top hygiene standards.',
-      image: '/gallery/img15.jpg',
+      image: '/table-water.jpg',
       services: ['Multi-stage Purification', 'Quality Assurance Testing', 'Wholesale Distribution', 'Retail Sales', 'Multiple Packaging Sizes'],
     },
     {
