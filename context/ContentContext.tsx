@@ -26,10 +26,12 @@ export const ContentProvider: React.FC<{ children: React.ReactNode }> = ({ child
         // Deep merge logic to ensure nested services are updated
         const mergedContent = { ...INITIAL_CONTENT, ...parsed };
         
-        // Force refresh services and contact from INITIAL_CONTENT if they've changed
+        // FORCE UPDATE business units to ensure images are picked up
+        mergedContent.units = INITIAL_CONTENT.units;
         mergedContent.services = INITIAL_CONTENT.services;
         mergedContent.contact = INITIAL_CONTENT.contact;
         mergedContent.gallery = INITIAL_CONTENT.gallery;
+        mergedContent.hero = INITIAL_CONTENT.hero;
         
         setContent(mergedContent);
       } catch (e) {
