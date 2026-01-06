@@ -23,7 +23,14 @@ export const ContentProvider: React.FC<{ children: React.ReactNode }> = ({ child
       try {
         const parsed = JSON.parse(saved);
         // Merge with initial to ensure new structure changes don't break old saves
-        setContent({ ...INITIAL_CONTENT, ...parsed });
+        // Deep merge logic to ensure nested services are updated
+        const mergedContent = { ...INITIAL_CONTENT, ...parsed };
+        
+        // Force refresh services from INITIAL_CONTENT if they've changed
+        mergedContent.services = INITIAL_CONTENT.services;
+        mergedContent.contact = { ...INITIAL_CONTENT.contact, ...parsed.contact };
+        
+        setContent(mergedContent);
       } catch (e) {
         console.error("Failed to parse saved content", e);
       }
