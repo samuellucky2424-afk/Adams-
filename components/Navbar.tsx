@@ -34,8 +34,22 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <a href="#home" className={`font-serif text-2xl font-bold tracking-tight ${isScrolled ? 'text-dark-900' : 'text-white'}`}>
-              {content.companyName.split(' ')[0]}<span className="text-gold-500">{content.companyName.split(' ')[1] || ''}</span>
+            <a href="#home" className="flex items-center group">
+              <div className="relative w-12 h-12 md:w-14 md:h-14 overflow-hidden rounded-full border-2 border-gold-500 shadow-lg group-hover:scale-110 transition-transform duration-300 mr-3 bg-dark-900">
+                <img 
+                  src="/logo.jpg" 
+                  alt="Splendour Vites Logo" 
+                  className="w-full h-full object-cover scale-110"
+                />
+              </div>
+              <div className="flex flex-col">
+                <span className={`font-serif text-xl md:text-2xl font-bold tracking-tight leading-none ${isScrolled ? 'text-dark-900' : 'text-white'}`}>
+                  Splendour<span className="text-gold-500">Vites</span>
+                </span>
+                <span className={`text-[10px] uppercase tracking-[0.2em] mt-1 font-bold ${isScrolled ? 'text-neutral-500' : 'text-white/70'}`}>
+                  Beauty Saloon
+                </span>
+              </div>
             </a>
           </div>
 
