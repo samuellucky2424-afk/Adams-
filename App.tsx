@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import { ContentProvider } from './context/ContentContext';
+import { BrowserRouter as Router, Routes, Route, Navigate, Link } from 'react-router-dom';
+import { ContentProvider, useContent } from './context/ContentContext';
+import UnitPage from './pages/UnitPage';
+import Button from './components/ui/Button';
 
 // Components
 import Navbar from './components/Navbar';

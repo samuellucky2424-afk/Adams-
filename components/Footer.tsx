@@ -1,5 +1,6 @@
 import React from 'react';
 import { Facebook, Instagram, Youtube } from 'lucide-react';
+import { useContent } from '../context/ContentContext';
 
 const Footer: React.FC = () => {
   const { content } = useContent();
