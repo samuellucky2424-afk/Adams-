@@ -14,7 +14,7 @@ export const INITIAL_CONTENT: AppContent = {
     phone: "09061868772",
     phoneDisplay: "0906 186 8772",
     whatsapp: "2349061868772",
-    email: "info@splendourvites.com",
+    email: "splendourvites@gmail.com",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.345678901234!2d6.2!3d6.25!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10439123456789ab%3A0x123456789abcdef0!2sAgbor%2C%20Delta!5e0!3m2!1sen!2sng!4v1234567890123",
     openingHours: {
       monSat: "8:00 AM – 9:00 PM",
