@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0 text-center md:text-left">
             <h3 className="font-serif text-2xl font-bold text-white mb-2">
-               {content.companyName}
+               Splendour Vites Enterprises
             </h3>
             <p className="text-gray-500 text-sm max-w-xs">{content.hero.tagline}</p>
           </div>

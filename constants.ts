@@ -6,7 +6,7 @@ export const INITIAL_CONTENT: AppContent = {
     {
       id: 'saloon',
       name: 'Splendour Vites Beauty (Unisex) Saloon',
-      tagline: 'Excellence in Hair & Beauty Care',
+      tagline: 'Splendour Vites Enterprises',
       description: 'Experience premium styling and grooming at our state-of-the-art unisex salon. We combine modern techniques with professional care to give you the perfect look.\n\nOur salon offers a wide range of services including professional hairstyling, barbing, beauty treatments, and more. We pride ourselves on our hygiene standards and the use of premium products for all our clients.',
       image: '/gallery/img1.jpg',
       services: ['Professional Hairstyling', 'Barbing (Adults & Kids)', 'Wig & Frontal Installation', 'Manicure & Pedicure', 'Facial & Acne Treatment', 'Eyebrow Shaping & Microblading', 'Dreadlocks Maintenance', 'Bridal Styling'],
