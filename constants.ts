@@ -45,7 +45,7 @@ export const INITIAL_CONTENT: AppContent = {
     showRating: true
   },
   contact: {
-    address: "Lagos, Nigeria",
+    address: "Shop 1, Ebenezer Plaza, Sakponba Road, Alihame Rd, Opposite Bolero Junction, Agbor 321102, Delta",
     phone: "08136544434",
     phoneDisplay: "+234 813 654 4434",
     whatsapp: "2349061868772",
