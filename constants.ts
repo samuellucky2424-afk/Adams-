@@ -55,7 +55,7 @@ export const INITIAL_CONTENT: AppContent = {
     phoneDisplay: "+234 906 186 8772",
     whatsapp: "2349061868772",
     email: "splendourvites@gmail.com",
-    mapUrl: "",
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.418423406259!2d6.188448974530084!3d6.251433726002622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1043916962f92965%3A0xe5304024840e74f8!2sAlihame%20Rd%2C%20Agbor%2C%20Delta!5e0!3m2!1sen!2sng!4v1715100000000!5m2!1sen!2sng",
     facebook: "https://www.facebook.com/share/19Jzw6pR7X/",
     instagram: "https://www.instagram.com/splendour_vites?igsh=MWh4aW52aHowNzMwMw==",
     twitter: "https://youtube.com/@splendourvites?si=nBtfoZVReKSDlUVG",
