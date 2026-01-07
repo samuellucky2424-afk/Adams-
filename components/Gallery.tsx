@@ -44,11 +44,11 @@ const Gallery: React.FC = () => {
           </div>
         </div>
 
-        <div className="relative h-[600px] md:h-[800px] overflow-hidden rounded-3xl shadow-2xl bg-nude-50">
+        <div className="relative h-[400px] sm:h-[600px] md:h-[800px] overflow-hidden rounded-3xl shadow-2xl bg-nude-50">
           {groups.map((group, groupIndex) => (
             <div
               key={groupIndex}
-              className={`absolute inset-0 grid grid-cols-2 md:grid-cols-3 gap-4 p-4 transition-all duration-1000 transform ${
+              className={`absolute inset-0 grid grid-cols-2 md:grid-cols-3 gap-2 sm:gap-4 p-2 sm:p-4 transition-all duration-1000 transform ${
                 activeGroup === groupIndex 
                   ? 'opacity-100 translate-x-0 scale-100' 
                   : 'opacity-0 translate-x-full scale-95 pointer-events-none'
@@ -58,7 +58,7 @@ const Gallery: React.FC = () => {
                 <div 
                   key={index} 
                   className={`group relative overflow-hidden rounded-xl shadow-md ${
-                    index % 3 === 0 ? 'md:col-span-2 md:row-span-2 h-[300px] md:h-auto' : 'h-[150px] md:h-auto'
+                    index % 3 === 0 ? 'md:col-span-2 md:row-span-2 h-[200px] sm:h-[300px] md:h-auto' : 'h-[100px] sm:h-[150px] md:h-auto'
                   }`}
                 >
                   <img 

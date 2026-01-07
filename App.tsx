@@ -106,13 +106,13 @@ const PublicSite = () => {
                 ref={scrollRef}
                 onMouseEnter={() => setIsPaused(true)}
                 onMouseLeave={() => setIsPaused(false)}
-                className="flex overflow-x-auto gap-8 pb-8 no-scrollbar snap-x snap-mandatory scroll-smooth"
+                className="flex overflow-x-auto gap-4 sm:gap-8 pb-8 no-scrollbar snap-x snap-mandatory scroll-smooth"
                 style={ { scrollbarWidth: 'none', msOverflowStyle: 'none' } }
               >
                 {content.units.map((unit) => (
                   <div 
                     key={unit.id} 
-                    className="min-w-[300px] md:min-w-[350px] bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-xl transition-shadow flex flex-col snap-start"
+                    className="min-w-[280px] xs:min-w-[300px] md:min-w-[350px] bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-xl transition-shadow flex flex-col snap-start"
                   >
                     <div className="h-48 overflow-hidden">
                       <img src={unit.image} alt={unit.name} className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />

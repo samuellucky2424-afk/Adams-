@@ -117,7 +117,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Menu Dropdown */}
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-xl border-t border-gray-100 max-h-[80vh] overflow-y-auto">
+        <div className="md:hidden fixed inset-0 top-[64px] z-50 bg-white shadow-xl max-h-[calc(100vh-64px)] overflow-y-auto">
           <div className="px-4 pt-2 pb-6 space-y-2">
             {navLinks.map((link) => (
               link.type === 'dropdown' ? (
