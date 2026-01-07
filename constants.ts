@@ -120,7 +120,7 @@ export const INITIAL_CONTENT: AppContent = {
       iconName: "Sparkles",
       image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=1200&q=80",
       services: [
-        { name: "Acne treatments", description: "Specialized facials.", image: "" },
+        { name: "Acne treatments", description: "Specialized facials.", image: "/attached_assets/acne-treatment.jpg" },
         { name: "Eyebrow shaping", description: "Sculpting the perfect brow.", image: "" },
         { name: "Microblading", description: "Semi-permanent make-up.", image: "" },
         { name: "Fixing of eye lashes", description: "Professional lash extension.", image: "" }
