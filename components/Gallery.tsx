@@ -1,115 +1,79 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useContent } from '../context/ContentContext';
-import { X, ChevronLeft, ChevronRight, Maximize2 } from 'lucide-react';
 
 const Gallery: React.FC = () => {
   const { content } = useContent();
-  const [selectedImage, setSelectedImage] = useState<number | null>(null);
+  const [activeGroup, setActiveGroup] = useState(0);
+
+  // Group images into 4 groups
+  const groupSize = Math.ceil(content.gallery.length / 4);
+  const groups = [
+    content.gallery.slice(0, groupSize),
+    content.gallery.slice(groupSize, groupSize * 2),
+    content.gallery.slice(groupSize * 2, groupSize * 3),
+    content.gallery.slice(groupSize * 3)
+  ];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveGroup((prev) => (prev + 1) % 4);
+    }, 5000); // Change group every 5 seconds
+    return () => clearInterval(timer);
+  }, []);
 
   if (!content.settings.sections.gallery) return null;
 
-  const handlePrev = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    if (selectedImage !== null) {
-      setSelectedImage((prev) => (prev === 0 ? content.gallery.length - 1 : prev! - 1));
-    }
-  };
-
-  const handleNext = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    if (selectedImage !== null) {
-      setSelectedImage((prev) => (prev === content.gallery.length - 1 ? 0 : prev! + 1));
-    }
-  };
-
   return (
-    <section id="gallery" className="py-20 bg-neutral-50">
+    <section id="gallery" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h4 className="text-gold-600 font-bold uppercase tracking-wider text-sm mb-2">Our Work</h4>
-          <h2 className="font-serif text-4xl font-bold text-dark-900 mb-4">Gallery</h2>
-          <p className="text-neutral-600 max-w-2xl mx-auto">
-            Explore our collection of styles and premium services. Click on any image to view it in full screen.
-          </p>
+          <h2 className="font-serif text-4xl font-bold text-dark-900 mb-4">Our Gallery</h2>
+          <p className="text-neutral-600">A glimpse into our world of beauty and style.</p>
+          
+          <div className="flex justify-center space-x-2 mt-6">
+            {[0, 1, 2, 3].map((i) => (
+              <button
+                key={i}
+                onClick={() => setActiveGroup(i)}
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  activeGroup === i ? 'bg-gold-600 w-8' : 'bg-gray-300'
+                }`}
+                aria-label={`Show group ${i + 1}`}
+              />
+            ))}
+          </div>
         </div>
 
-        <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4 space-y-4">
-          {content.gallery.map((src, index) => (
-            <div 
-              key={index} 
-              className="relative group cursor-pointer overflow-hidden rounded-xl bg-white shadow-md break-inside-avoid"
-              onClick={() => setSelectedImage(index)}
+        <div className="relative h-[400px] sm:h-[600px] md:h-[800px] overflow-hidden rounded-3xl shadow-2xl bg-nude-50">
+          {groups.map((group, groupIndex) => (
+            <div
+              key={groupIndex}
+              className={`absolute inset-0 grid grid-cols-2 md:grid-cols-3 gap-2 sm:gap-4 p-2 sm:p-4 transition-all duration-1000 transform ${
+                activeGroup === groupIndex 
+                  ? 'opacity-100 translate-x-0 scale-100' 
+                  : 'opacity-0 translate-x-full scale-95 pointer-events-none'
+              }`}
             >
-              <img 
-                src={src} 
-                alt={`Gallery image ${index + 1}`} 
-                className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
-                <div className="p-3 bg-white/20 backdrop-blur-sm rounded-full transform scale-90 group-hover:scale-100 transition-transform duration-300">
-                  <Maximize2 className="text-white" size={24} />
+              {group.map((src, index) => (
+                <div 
+                  key={index} 
+                  className={`group relative overflow-hidden rounded-xl shadow-md ${
+                    index % 3 === 0 ? 'md:col-span-2 md:row-span-2 h-[200px] sm:h-[300px] md:h-auto' : 'h-[100px] sm:h-[150px] md:h-auto'
+                  }`}
+                >
+                  <img 
+                    src={src} 
+                    alt={`Gallery ${groupIndex * groupSize + index + 1}`} 
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span className="text-white text-xs md:text-base font-serif tracking-wider border border-white px-2 py-1 md:px-4 md:py-2">SPLENDOUR VITES</span>
+                  </div>
                 </div>
-              </div>
+              ))}
             </div>
           ))}
         </div>
-
-        {/* Lightbox */}
-        {selectedImage !== null && (
-          <div 
-            className="fixed inset-0 z-50 bg-black/95 backdrop-blur-sm flex items-center justify-center p-4"
-            onClick={() => setSelectedImage(null)}
-          >
-            <button 
-              className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors"
-              onClick={() => setSelectedImage(null)}
-            >
-              <X size={32} />
-            </button>
-
-            <button 
-              className="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/10 hover:bg-white/20 text-white transition-all hidden md:block"
-              onClick={handlePrev}
-            >
-              <ChevronLeft size={40} />
-            </button>
-
-            <div className="relative max-w-5xl max-h-[85vh] flex items-center justify-center" onClick={e => e.stopPropagation()}>
-              <img 
-                src={content.gallery[selectedImage]} 
-                alt="Fullscreen gallery" 
-                className="max-w-full max-h-full object-contain rounded-lg"
-              />
-              <div className="absolute -bottom-10 left-0 right-0 text-center text-white/70 text-sm">
-                Image {selectedImage + 1} of {content.gallery.length}
-              </div>
-            </div>
-
-            <button 
-              className="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/10 hover:bg-white/20 text-white transition-all hidden md:block"
-              onClick={handleNext}
-            >
-              <ChevronRight size={40} />
-            </button>
-            
-            {/* Mobile Nav */}
-            <div className="absolute bottom-10 flex gap-10 md:hidden">
-              <button 
-                className="p-3 rounded-full bg-white/10 text-white"
-                onClick={handlePrev}
-              >
-                <ChevronLeft size={30} />
-              </button>
-              <button 
-                className="p-3 rounded-full bg-white/10 text-white"
-                onClick={handleNext}
-              >
-                <ChevronRight size={30} />
-              </button>
-            </div>
-          </div>
-        )}
       </div>
     </section>
   );
