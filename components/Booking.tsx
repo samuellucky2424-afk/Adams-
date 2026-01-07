@@ -49,10 +49,10 @@ const Booking: React.FC<BookingProps> = ({ prefilledService }) => {
         <div className="flex flex-col lg:flex-row gap-12 items-center">
           
           <div className="w-full lg:w-1/2 text-white">
-            <h4 className="text-gold-500 font-bold uppercase tracking-wider text-sm mb-2">Book Appointment</h4>
-            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6">Ready for a Transformation?</h2>
+            <h4 className="text-gold-500 font-bold uppercase tracking-wider text-sm mb-2">Engage with Us</h4>
+            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6">Experience Excellence Across Our Brands</h2>
             <p className="text-gray-400 text-lg mb-8 leading-relaxed">
-              Skip the wait and secure your spot. Fill out the form, and we will redirect you to WhatsApp to confirm your appointment instantly.
+              Explore our premium products and specialized services. Fill out the form below to connect with us or schedule a session, and we will redirect you to WhatsApp for personalized assistance.
             </p>
             
             <div className="space-y-6">
@@ -61,9 +61,9 @@ const Booking: React.FC<BookingProps> = ({ prefilledService }) => {
                    <Clock size={24} />
                  </div>
                  <div>
-                   <p className="font-bold">Opening Hours</p>
-                   <p className="text-sm text-gray-400">Tue - Sun: 8:00 AM - 8:00 PM</p>
-                   <p className="text-sm text-gray-400">Mon: Closed</p>
+                   <p className="font-bold">Business Hours</p>
+                   <p className="text-sm text-gray-400">Mon - Sat: 8:00am to 9:00pm</p>
+                   <p className="text-sm text-gray-400">Sundays: 2:00pm to 8:00pm</p>
                  </div>
                </div>
                <div className="flex items-center space-x-4">
@@ -151,11 +151,11 @@ const Booking: React.FC<BookingProps> = ({ prefilledService }) => {
                 </div>
 
                 <Button fullWidth type="submit" size="lg" className="mt-4">
-                  Confirm via WhatsApp
+                  Connect via WhatsApp
                 </Button>
                 
                 <p className="text-xs text-center text-gray-500 mt-4">
-                  By booking, you agree to our salon policies.
+                  By submitting, you agree to our service terms and policies.
                 </p>
               </div>
             </form>

@@ -81,8 +81,8 @@ export const INITIAL_CONTENT: AppContent = {
       contact: true
     },
     seo: {
-      title: "Splendour Vites Beauty (Unisex) Saloon",
-      description: "Luxury Beauty & Grooming for Men & Women in Agbor, Delta State."
+      title: "Splendour Vites Enterprises",
+      description: "Premium beauty, health, and lifestyle solutions in Agbor, Delta State."
     }
   },
   services: [
