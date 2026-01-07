@@ -96,7 +96,7 @@ export const INITIAL_CONTENT: AppContent = {
         { name: "Hairstyling", description: "Expert cuts and styling.", image: "/attached_assets/hairstyling.jpg" },
         { name: "Blow dry", description: "Professional blowouts.", image: "/attached_assets/blow-dry.jpg" },
         { name: "Balayage", description: "Hand-painted highlights.", image: "/attached_assets/balayage.jpg" },
-        { name: "Hair extensions", description: "Premium quality hair extensions.", image: "" },
+        { name: "Hair extensions", description: "Premium quality hair extensions.", image: "/attached_assets/hair-extensions.jpg" },
         { name: "Dreadlocks & Maintenance", description: "Complete care for your locks.", image: "/attached_assets/dreadlocks.jpg" },
         { name: "Braids of all styles", description: "From box braids to cornrows.", image: "/attached_assets/braids.jpg" },
         { name: "Tinting & Dyes", description: "Professional hair coloring.", image: "/attached_assets/tinting-dye.jpg" },
