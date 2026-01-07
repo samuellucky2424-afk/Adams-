@@ -63,13 +63,30 @@ const UnitPage: React.FC = () => {
               </div>
 
               {unit.services && (
-                <div>
+                <div className="mb-12">
                   <h3 className="text-2xl font-bold mb-6 font-serif">Our Services & Products</h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {unit.services.map((service, index) => (
                       <div key={index} className="bg-gray-50 p-4 rounded-lg border border-gray-100 flex items-start">
                         <div className="w-2 h-2 bg-gold-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                         <span className="text-gray-700">{service}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {unit.additionalImages && unit.additionalImages.length > 0 && (
+                <div className="mt-12">
+                  <h3 className="text-2xl font-bold mb-6 font-serif">Branded Gallery</h3>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    {unit.additionalImages.map((img, index) => (
+                      <div key={index} className="rounded-2xl overflow-hidden shadow-lg border border-gray-100 group">
+                        <img 
+                          src={img} 
+                          alt={`${unit.name} Design ${index + 1}`} 
+                          className="w-full h-auto transform group-hover:scale-105 transition-transform duration-500" 
+                        />
                       </div>
                     ))}
                   </div>

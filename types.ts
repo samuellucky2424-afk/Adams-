@@ -75,6 +75,7 @@ export interface BusinessUnit {
   tagline: string;
   description: string;
   image: string;
+  additionalImages?: string[];
   services?: string[];
   hours?: string;
 }

@@ -8,7 +8,8 @@ export const INITIAL_CONTENT: AppContent = {
       name: 'Splendour Vites Beauty (Unisex) Saloon',
       tagline: 'Splendour Vites Enterprises',
       description: 'Step into a world of elite grooming and aesthetic perfection at Splendour Vites Beauty (Unisex) Saloon. As a cornerstone of Splendour Vites Enterprises, we redefine beauty standards through a fusion of sophisticated artistry and state-of-the-art techniques. Our sanctuary of style is dedicated to crafting bespoke looks that empower your confidence and reflect your unique personality.\n\nWe specialize in high-end hairstyling, precision barbing for all ages, and advanced beauty treatments including professional wig installations and medical-grade facial care. At Splendour Vites, your wellness is our priority—experience luxury in an environment built on uncompromising hygiene and premium professional products.',
-      image: '/saloon-banner.jpg',
+      image: '/gallery/img1.jpg',
+      additionalImages: ['/saloon-banner.jpg', '/saloon-logo-alt.jpg'],
       services: ['Professional Hairstyling', 'Barbing (Adults & Kids)', 'Wig & Frontal Installation', 'Manicure & Pedicure', 'Facial & Acne Treatment', 'Eyebrow Shaping & Microblading', 'Dreadlocks Maintenance', 'Bridal Styling'],
       hours: 'Mon-Sat: 8:00 AM - 9:00 PM, Sun: 2:00 PM - 8:00 PM'
     },
