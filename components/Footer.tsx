@@ -13,7 +13,8 @@ const Footer: React.FC = () => {
             <h3 className="font-serif text-2xl font-bold text-white mb-2">
                Splendour Vites Enterprises
             </h3>
-            <p className="text-gray-500 text-sm max-w-xs">{content.hero.tagline}</p>
+            <p className="text-gray-500 text-sm max-w-xs mb-4">{content.hero.tagline}</p>
+            <p className="text-gray-400 text-xs italic">Like and follow our pages on Facebook, Instagram, YouTube, and TikTok!</p>
           </div>
 
           <div className="flex space-x-6">
@@ -40,6 +41,25 @@ const Footer: React.FC = () => {
               className="text-gray-400 hover:text-gold-500 transition-colors"
             >
               <Youtube size={24} />
+            </a>
+            <a 
+              href="https://tiktok.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-gray-400 hover:text-gold-500 transition-colors"
+            >
+              <svg 
+                viewBox="0 0 24 24" 
+                width="24" 
+                height="24" 
+                stroke="currentColor" 
+                strokeWidth="2" 
+                fill="none" 
+                strokeLinecap="round" 
+                strokeLinejoin="round"
+              >
+                <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+              </svg>
             </a>
           </div>
         </div>
