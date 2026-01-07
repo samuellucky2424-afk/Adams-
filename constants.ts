@@ -135,7 +135,7 @@ export const INITIAL_CONTENT: AppContent = {
         { name: "Acrylic nails", description: "Durable extensions.", image: "/attached_assets/acrylic-nails.jpg" },
         { name: "Manicure", description: "Nail shaping and care.", image: "/attached_assets/manicure.jpg" },
         { name: "Pedicure", description: "Relaxing foot soak.", image: "/attached_assets/pedicure.jpg" },
-        { name: "Nails design & care", description: "Artistic nail designs.", image: "" }
+        { name: "Nails design & care", description: "Artistic nail designs.", image: "/attached_assets/nails-design.jpg" }
       ]
     },
     {
