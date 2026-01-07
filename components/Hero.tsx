@@ -58,7 +58,7 @@ const Hero: React.FC = () => {
           <div className="flex flex-wrap gap-3 mb-8">
             <div className="inline-flex items-center bg-black/50 backdrop-blur-sm px-4 py-2 rounded-full border border-white/10">
               <span className="w-2 h-2 rounded-full bg-green-500 mr-2 animate-pulse"></span>
-              <span className="text-white text-sm">Open Today: {new Date().getDay() === 0 ? '2:00 PM - 8:00 PM' : '8:00 AM - 9:00 PM'}</span>
+              <span className="text-white text-sm">Open Today: <span className="ml-1">{new Date().getDay() === 0 ? '2:00 PM - 8:00 PM' : '8:00 AM - 9:00 PM'}</span></span>
             </div>
             {content.contact.posAvailable && (
               <button 

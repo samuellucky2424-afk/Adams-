@@ -38,16 +38,21 @@ export const INITIAL_CONTENT: AppContent = {
     }
   ],
   hero: {
-    title: "Excellence in Diverse Business Solutions",
+    title: "Premium Quality. Exceptional Service. Diverse Solutions.",
     tagline: "Quality Without Compromise",
-    description: "A conglomerate of premium brands committed to quality, health, and beauty. Discover our range of specialized services across multiple sectors.",
-    bgImage: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+    description: "Splendour Vites Enterprises is your trusted partner for premium beauty, health, and lifestyle products. We are committed to excellence across all our specialized business units.",
+    bgImage: "/hero-1.jpg",
     showRating: true
   },
+  about: {
+    title: "About Splendour Vites Enterprises",
+    description: "Splendour Vites Enterprises is a diversified conglomerate dedicated to delivering excellence across multiple industries. From our flagship Unisex Salon providing premium grooming to our high-standard Table Water production, Hair Product manufacturing, and community-focused Pharmacies, we prioritize quality, trust, and customer satisfaction in everything we do. Our mission is to enhance lives through professional services and premium products that meet the highest standards of safety and hygiene.",
+    image: "/hero-2.jpg",
+  },
   contact: {
-    address: "Shop 1, Ebenezer Plaza, Sakponba Road, Alihame Rd, Opposite Bolero Junction, Agbor 321102, Delta",
-    phone: "08136544434",
-    phoneDisplay: "+234 813 654 4434",
+    address: "Shop 1, Opposite Bolero Club, Alihame Rd, Agbor 321102, Delta, Nigeria",
+    phone: "+2349061868772",
+    phoneDisplay: "+234 906 186 8772",
     whatsapp: "2349061868772",
     email: "splendourvites@gmail.com",
     mapUrl: "",
