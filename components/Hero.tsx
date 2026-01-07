@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
             {hero.title}
           </h1>
           <p className="text-base sm:text-xl md:text-2xl text-gray-200 mb-2 font-light tracking-wide">
-            {companyName}
+            {hero.tagline}
           </p>
           <p className="text-sm sm:text-base md:text-lg text-gray-300 mb-6 sm:mb-8 max-w-lg mx-auto sm:mx-0">
             {hero.description}

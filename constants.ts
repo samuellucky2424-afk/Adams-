@@ -39,7 +39,7 @@ export const INITIAL_CONTENT: AppContent = {
   ],
   hero: {
     title: "Premium Quality. Exceptional Service. Diverse Solutions.",
-    tagline: "Quality Without Compromise",
+    tagline: "Splendour Vites Enterprises",
     description: "Splendour Vites Enterprises is your trusted partner for premium beauty, health, and lifestyle products. We are committed to excellence across all our specialized business units.",
     bgImage: "/hero-1.jpg",
     showRating: true
