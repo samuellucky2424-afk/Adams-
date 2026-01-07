@@ -60,8 +60,8 @@ export const INITIAL_CONTENT: AppContent = {
     instagram: "https://www.instagram.com/splendour_vites?igsh=MWh4aW52aHowNzMwMw==",
     twitter: "https://youtube.com/@splendourvites?si=nBtfoZVReKSDlUVG",
     openingHours: {
-      monSat: "8:00 AM – 9:00 PM",
-      sun: "2:00 PM – 8:00 PM"
+      monSat: "8:00am to 9:00pm",
+      sun: "2:00pm to 8:00pm"
     },
     posAvailable: true
   },

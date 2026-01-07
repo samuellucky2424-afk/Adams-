@@ -53,8 +53,8 @@ const Contact: React.FC = () => {
                 <div>
                   <h5 className="font-bold mb-1">Business Hours</h5>
                   <ul className="text-gray-300 text-sm space-y-1">
-                    <li className="flex justify-between w-64"><span>Mon - Sat:</span> <span>8:00 AM - 9:00 PM</span></li>
-                    <li className="flex justify-between w-64"><span>Sunday:</span> <span>2:00 PM - 8:00 PM</span></li>
+                    <li className="flex justify-between w-64"><span>Mon - Sat:</span> <span>8:00am to 9:00pm</span></li>
+                    <li className="flex justify-between w-64"><span>Sundays:</span> <span>2:00pm to 8:00pm</span></li>
                   </ul>
                 </div>
               </div>
