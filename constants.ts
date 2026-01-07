@@ -123,7 +123,7 @@ export const INITIAL_CONTENT: AppContent = {
         { name: "Acne treatments", description: "Specialized facials.", image: "/attached_assets/acne-treatment.jpg" },
         { name: "Eyebrow shaping", description: "Sculpting the perfect brow.", image: "/attached_assets/eyebrow-shaping.jpg" },
         { name: "Microblading", description: "Semi-permanent make-up.", image: "/attached_assets/microblading.jpg" },
-        { name: "Fixing of eye lashes", description: "Professional lash extension.", image: "" }
+        { name: "Fixing of eye lashes", description: "Professional lash extension.", image: "/attached_assets/lashes.jpg" }
       ]
     },
     {
