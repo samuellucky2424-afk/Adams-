@@ -83,6 +83,11 @@ export interface AppContent {
   companyName: string;
   units: BusinessUnit[];
   hero: HeroSection;
+  about: {
+    title: string;
+    description: string;
+    image: string;
+  };
   contact: ContactInfo;
   services: ServiceCategory[];
   testimonials: Review[];
