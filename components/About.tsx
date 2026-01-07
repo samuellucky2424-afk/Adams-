@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldCheck, Users, Sparkles } from 'lucide-react';
+import { ShieldCheck, Users, Sparkles, Droplets, ShoppingBag, Pill } from 'lucide-react';
 import { useContent } from '../context/ContentContext';
 
 const About: React.FC = () => {
@@ -36,7 +36,34 @@ const About: React.FC = () => {
                 </div>
                 <div>
                   <h5 className="font-bold text-dark-900">Unisex Salon</h5>
-                  <p className="text-sm text-neutral-500">Specialized services for everyone.</p>
+                  <p className="text-sm text-neutral-500">Premium grooming for everyone.</p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <div className="p-3 bg-nude-100 rounded-lg text-gold-600 mr-4">
+                  <Droplets size={24} />
+                </div>
+                <div>
+                  <h5 className="font-bold text-dark-900">Table Water</h5>
+                  <p className="text-sm text-neutral-500">Pure, clean, and refreshing hydration.</p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <div className="p-3 bg-nude-100 rounded-lg text-gold-600 mr-4">
+                  <ShoppingBag size={24} />
+                </div>
+                <div>
+                  <h5 className="font-bold text-dark-900">Hair Products</h5>
+                  <p className="text-sm text-neutral-500">Professional sales & production.</p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <div className="p-3 bg-nude-100 rounded-lg text-gold-600 mr-4">
+                  <Pill size={24} />
+                </div>
+                <div>
+                  <h5 className="font-bold text-dark-900">Pharmacies</h5>
+                  <p className="text-sm text-neutral-500">Quality healthcare essentials.</p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -53,8 +80,8 @@ const About: React.FC = () => {
                   <Sparkles size={24} />
                 </div>
                 <div>
-                  <h5 className="font-bold text-dark-900">Expert Stylists</h5>
-                  <p className="text-sm text-neutral-500">Experienced professionals at your service.</p>
+                  <h5 className="font-bold text-dark-900">Expert Quality</h5>
+                  <p className="text-sm text-neutral-500">Excellence across all our brands.</p>
                 </div>
               </div>
             </div>
