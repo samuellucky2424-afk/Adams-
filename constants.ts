@@ -109,7 +109,7 @@ export const INITIAL_CONTENT: AppContent = {
       iconName: "UserCheck",
       image: "https://images.unsplash.com/photo-1503951914291-389651746c82?auto=format&fit=crop&w=1200&q=80",
       services: [
-        { name: "Barbing (Adults & Kids)", description: "Precision haircuts.", image: "" },
+        { name: "Barbing (Adults & Kids)", description: "Precision haircuts.", image: "/attached_assets/barbing-main.jpg" },
         { name: "Barbing & dye", description: "Haircut with dye.", image: "" },
         { name: "Shaving only", description: "Clean shave.", image: "" }
       ]
