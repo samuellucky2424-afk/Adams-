@@ -133,7 +133,7 @@ export const INITIAL_CONTENT: AppContent = {
       image: "https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=1200&q=80",
       services: [
         { name: "Acrylic nails", description: "Durable extensions.", image: "/attached_assets/acrylic-nails.jpg" },
-        { name: "Manicure", description: "Nail shaping and care.", image: "" },
+        { name: "Manicure", description: "Nail shaping and care.", image: "/attached_assets/manicure.jpg" },
         { name: "Pedicure", description: "Relaxing foot soak.", image: "" },
         { name: "Nails design & care", description: "Artistic nail designs.", image: "" }
       ]
