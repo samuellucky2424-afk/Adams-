@@ -50,6 +50,16 @@
           -ms-overflow-style: none;
           scrollbar-width: none;
       }
+      @keyframes scroll-slow {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+      .animate-scroll-slow {
+        animation: scroll-slow 30s linear infinite;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
     </style>
     <script>
       tailwind.config = {

@@ -77,18 +77,40 @@ const UnitPage: React.FC = () => {
               )}
 
               {unit.additionalImages && unit.additionalImages.length > 0 && (
-                <div className="mt-12">
+                <div className="mt-12 overflow-hidden">
                   <h3 className="text-2xl font-bold mb-6 font-serif">Branded Gallery</h3>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    {unit.additionalImages.map((img, index) => (
-                      <div key={index} className="rounded-2xl overflow-hidden shadow-lg border border-gray-100 group">
-                        <img 
-                          src={img} 
-                          alt={`${unit.name} Design ${index + 1}`} 
-                          className="w-full h-auto transform group-hover:scale-105 transition-transform duration-500" 
-                        />
+                  <div className="relative group">
+                    <div 
+                      className="flex gap-6 overflow-x-auto no-scrollbar snap-x snap-mandatory pb-4"
+                      style={ {
+                        scrollbarWidth: 'none',
+                        msOverflowStyle: 'none',
+                        maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)'
+                      } }
+                      onMouseEnter={(e) => {
+                        const el = e.currentTarget;
+                        el.style.animationPlayState = 'paused';
+                      }}
+                      onMouseLeave={(e) => {
+                        const el = e.currentTarget;
+                        el.style.animationPlayState = 'running';
+                      }}
+                    >
+                      <div className="flex gap-6 animate-scroll-slow">
+                        {[...unit.additionalImages, ...unit.additionalImages].map((img, index) => (
+                          <div 
+                            key={index} 
+                            className="min-w-[280px] sm:min-w-[400px] rounded-2xl overflow-hidden shadow-lg border border-gray-100 snap-center transition-all duration-1000 hover:scale-105"
+                          >
+                            <img 
+                              src={img} 
+                              alt={`${unit.name} Design ${index + 1}`} 
+                              className="w-full h-auto object-cover aspect-video" 
+                            />
+                          </div>
+                        ))}
                       </div>
-                    ))}
+                    </div>
                   </div>
                 </div>
               )}
