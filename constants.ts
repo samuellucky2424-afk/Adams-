@@ -100,7 +100,7 @@ export const INITIAL_CONTENT: AppContent = {
         { name: "Dreadlocks & Maintenance", description: "Complete care for your locks.", image: "" },
         { name: "Braids of all styles", description: "From box braids to cornrows.", image: "" },
         { name: "Tinting & Dyes", description: "Professional hair coloring.", image: "" },
-        { name: "Frontal installations", description: "Flawless wig and frontal fixing.", image: "" }
+        { name: "Frontal installations", description: "Flawless wig and frontal fixing.", image: "/attached_assets/frontal-install.jpg" }
       ]
     },
     {
