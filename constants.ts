@@ -111,7 +111,7 @@ export const INITIAL_CONTENT: AppContent = {
       services: [
         { name: "Barbing (Adults & Kids)", description: "Precision haircuts.", image: "/attached_assets/barbing-main.jpg" },
         { name: "Barbing & dye", description: "Haircut with dye.", image: "/attached_assets/barbing-dye.jpg" },
-        { name: "Shaving only", description: "Clean shave.", image: "/attached_assets/shaving.jpg" }
+        { name: "Shaving only", description: "Clean shave.", image: "/attached_assets/shaving-main.jpg" }
       ]
     },
     {
