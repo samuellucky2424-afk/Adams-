@@ -203,6 +203,13 @@ export const INITIAL_CONTENT: AppContent = {
     }
   ],
   gallery: [
+    "/gallery/gallery-wash.jpg",
+    "/gallery/gallery-smile.jpg",
+    "/gallery/gallery-styling.jpg",
+    "/gallery/gallery-products.jpg",
+    "/gallery/gallery-water.jpg",
+    "/gallery/gallery-ps5.jpg",
+    "/gallery/gallery-snooker.jpg",
     "/gallery/img1.jpg",
     "/gallery/img2.jpg",
     "/gallery/img3.jpg",
