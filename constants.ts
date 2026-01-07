@@ -155,7 +155,7 @@ export const INITIAL_CONTENT: AppContent = {
       image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=80",
       services: [
         { name: "PlayStation (PS4 & PS5)", description: "Enjoy latest games while you wait.", image: "/attached_assets/ps5.jpg" },
-        { name: "Snooker", description: "Classic snooker table for your leisure.", image: "" }
+        { name: "Snooker", description: "Classic snooker table for your leisure.", image: "/attached_assets/snooker.jpg" }
       ]
     },
     {
