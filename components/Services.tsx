@@ -21,6 +21,7 @@ const Services: React.FC<ServicesProps> = ({ onBookService }) => {
 
   const activeData = content.services.find(cat => cat.id === activeCategory) || content.services[0];
   const ActiveIcon = activeData ? getIcon(activeData.iconName) : Sparkles;
+  const isHairCategory = activeData?.id === 'hair';
 
   return (
     <section id="services" className="py-20 bg-nude-50">
@@ -59,49 +60,93 @@ const Services: React.FC<ServicesProps> = ({ onBookService }) => {
             </div>
           </div>
 
-          {/* Service Cards Grid */}
+          {/* Service Cards Grid/Carousel */}
           <div className="w-full lg:w-3/4">
             <div className="mb-8 flex items-end justify-between">
                <div>
                  <h3 className="text-3xl font-serif text-dark-900 font-bold mb-2">{activeData?.title}</h3>
-                 <p className="text-neutral-500">Select a service to view details or book directly.</p>
+                 <p className="text-neutral-500">
+                   {isHairCategory ? "Swipe to explore our premium hair care menu." : "Select a service to view details or book directly."}
+                 </p>
                </div>
                <div className="hidden md:block text-gold-200">
                   <ActiveIcon size={48} strokeWidth={1} />
                </div>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {activeData?.services.map((service, idx) => (
-                <div 
-                  key={idx} 
-                  className="group bg-white p-6 rounded-xl border border-transparent hover:border-gold-200 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col relative overflow-hidden"
-                >
-                  {/* Decorative faint background icon */}
-                  <div className="absolute -right-4 -bottom-4 text-nude-100 opacity-20 group-hover:opacity-40 group-hover:scale-110 transition-all duration-500 rotate-12 pointer-events-none">
-                     <ActiveIcon size={100} />
-                  </div>
-
-                  <div className="relative z-10 flex flex-col h-full">
-                    <div className="flex justify-between items-start mb-3">
-                        <h4 className="font-serif font-bold text-xl text-dark-900 group-hover:text-gold-600 transition-colors pr-4">{service.name}</h4>
-                        <div className="w-8 h-8 rounded-full bg-nude-50 flex items-center justify-center text-gold-500 group-hover:bg-gold-600 group-hover:text-white transition-colors duration-300 shrink-0">
-                           <ArrowRight size={14} />
-                        </div>
-                    </div>
-                    
-                    <p className="text-neutral-500 text-sm leading-relaxed mb-6 flex-grow">{service.description}</p>
-                    
-                    <button 
-                      onClick={() => onBookService?.(service.name)}
-                      className="w-full py-3 rounded-lg border border-gold-200 text-gold-700 font-medium text-sm hover:bg-gold-600 hover:text-white hover:border-gold-600 transition-all duration-300 flex items-center justify-center bg-white/50 backdrop-blur-sm"
+            {isHairCategory ? (
+              <div className="relative group">
+                <div className="flex overflow-x-auto gap-4 pb-6 no-scrollbar snap-x snap-mandatory scroll-smooth">
+                  {activeData?.services.map((service, idx) => (
+                    <div 
+                      key={idx} 
+                      className="min-w-[280px] md:min-w-[calc(50%-1rem)] lg:min-w-[calc(25%-1rem)] snap-start group bg-white p-6 rounded-xl border border-transparent hover:border-gold-200 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col relative overflow-hidden"
                     >
-                      Book Appointment
-                    </button>
-                  </div>
+                      {/* Decorative faint background icon */}
+                      <div className="absolute -right-4 -bottom-4 text-nude-100 opacity-20 group-hover:opacity-40 group-hover:scale-110 transition-all duration-500 rotate-12 pointer-events-none">
+                         <ActiveIcon size={80} />
+                      </div>
+
+                      <div className="relative z-10 flex flex-col h-full">
+                        <div className="flex justify-between items-start mb-3">
+                            <h4 className="font-serif font-bold text-lg text-dark-900 group-hover:text-gold-600 transition-colors pr-4">{service.name}</h4>
+                            <div className="w-7 h-7 rounded-full bg-nude-50 flex items-center justify-center text-gold-500 group-hover:bg-gold-600 group-hover:text-white transition-colors duration-300 shrink-0">
+                               <ArrowRight size={12} />
+                            </div>
+                        </div>
+                        
+                        <p className="text-neutral-500 text-xs leading-relaxed mb-6 flex-grow line-clamp-2">{service.description}</p>
+                        
+                        <button 
+                          onClick={() => onBookService?.(service.name)}
+                          className="w-full py-2.5 rounded-lg border border-gold-200 text-gold-700 font-medium text-xs hover:bg-gold-600 hover:text-white hover:border-gold-600 transition-all duration-300 flex items-center justify-center bg-white/50 backdrop-blur-sm"
+                        >
+                          Book Appointment
+                        </button>
+                      </div>
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
+                {/* Horizontal Indicators for Hair Services */}
+                <div className="flex justify-center gap-1.5 mt-2">
+                  {activeData?.services.map((_, i) => (
+                    <div key={i} className="w-1.5 h-1.5 rounded-full bg-gold-200 group-hover:bg-gold-400 transition-colors"></div>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {activeData?.services.map((service, idx) => (
+                  <div 
+                    key={idx} 
+                    className="group bg-white p-6 rounded-xl border border-transparent hover:border-gold-200 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col relative overflow-hidden"
+                  >
+                    {/* Decorative faint background icon */}
+                    <div className="absolute -right-4 -bottom-4 text-nude-100 opacity-20 group-hover:opacity-40 group-hover:scale-110 transition-all duration-500 rotate-12 pointer-events-none">
+                       <ActiveIcon size={100} />
+                    </div>
+
+                    <div className="relative z-10 flex flex-col h-full">
+                      <div className="flex justify-between items-start mb-3">
+                          <h4 className="font-serif font-bold text-xl text-dark-900 group-hover:text-gold-600 transition-colors pr-4">{service.name}</h4>
+                          <div className="w-8 h-8 rounded-full bg-nude-50 flex items-center justify-center text-gold-500 group-hover:bg-gold-600 group-hover:text-white transition-colors duration-300 shrink-0">
+                             <ArrowRight size={14} />
+                          </div>
+                      </div>
+                      
+                      <p className="text-neutral-500 text-sm leading-relaxed mb-6 flex-grow">{service.description}</p>
+                      
+                      <button 
+                        onClick={() => onBookService?.(service.name)}
+                        className="w-full py-3 rounded-lg border border-gold-200 text-gold-700 font-medium text-sm hover:bg-gold-600 hover:text-white hover:border-gold-600 transition-all duration-300 flex items-center justify-center bg-white/50 backdrop-blur-sm"
+                      >
+                        Book Appointment
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
 
             {/* General CTA for Category */}
             <div className="mt-12 p-8 bg-dark-900 rounded-3xl text-white shadow-xl flex flex-col md:flex-row items-center justify-between text-center md:text-left relative overflow-hidden">
