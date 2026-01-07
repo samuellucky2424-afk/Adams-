@@ -94,7 +94,7 @@ export const INITIAL_CONTENT: AppContent = {
       image: "https://images.unsplash.com/photo-1562322140-8a143e38fa05?auto=format&fit=crop&w=1200&q=80",
       services: [
         { name: "Hairstyling", description: "Expert cuts and styling.", image: "/attached_assets/hairstyling.jpg" },
-        { name: "Blow dry", description: "Professional blowouts.", image: "" },
+        { name: "Blow dry", description: "Professional blowouts.", image: "/attached_assets/blow-dry.jpg" },
         { name: "Balayage", description: "Hand-painted highlights.", image: "" },
         { name: "Hair extensions", description: "Premium quality hair extensions.", image: "" },
         { name: "Dreadlocks & Maintenance", description: "Complete care for your locks.", image: "" },
