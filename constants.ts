@@ -164,7 +164,7 @@ export const INITIAL_CONTENT: AppContent = {
       iconName: "Zap",
       image: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80",
       services: [
-        { name: "Body waxing", description: "Smooth skin hair removal.", image: "" },
+        { name: "Body waxing", description: "Smooth skin hair removal.", image: "/attached_assets/body-waxing.jpg" },
         { name: "Brazilian waxing", description: "Complete hair removal.", image: "" }
       ]
     },
