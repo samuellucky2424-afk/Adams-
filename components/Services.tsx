@@ -87,6 +87,11 @@ const Services: React.FC<ServicesProps> = ({ onBookService }) => {
                     </div>
 
                     <div className="relative z-10 flex flex-col h-full">
+                      {service.image && (
+                        <div className="mb-4 h-40 overflow-hidden rounded-lg">
+                          <img src={service.image} alt={service.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                        </div>
+                      )}
                       <div className="flex justify-between items-start mb-3">
                           <h4 className="font-serif font-bold text-lg text-dark-900 group-hover:text-gold-600 transition-colors pr-4">{service.name}</h4>
                           <div className="w-7 h-7 rounded-full bg-nude-50 flex items-center justify-center text-gold-500 group-hover:bg-gold-600 group-hover:text-white transition-colors duration-300 shrink-0">
