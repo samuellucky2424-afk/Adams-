@@ -37,8 +37,8 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <Link to="/" className="flex items-center">
-              <img src="/logo.jpg" alt="Splendour Vites Enterprises" className="h-10 w-auto" />
+            <Link to="/" className={`font-serif text-2xl font-bold tracking-tight ${(isScrolled || !isHomePage) ? 'text-dark-900' : 'text-white'}`}>
+              Splendour<span className="text-gold-500">Vites</span>
             </Link>
           </div>
 
