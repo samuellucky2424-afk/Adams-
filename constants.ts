@@ -1,13 +1,13 @@
 import { AppContent } from './types';
 
 export const INITIAL_CONTENT: AppContent = {
-  companyName: "Splendour Vites Enterprises",
+  companyName: "SPLENDOUR VITES LTD",
   units: [
     {
       id: 'saloon',
-      name: 'Splendour Vites Beauty (Unisex) Saloon',
-      tagline: 'Splendour Vites Enterprises',
-      description: 'Step into a world of elite grooming and aesthetic perfection at Splendour Vites Beauty (Unisex) Saloon. As a cornerstone of Splendour Vites Enterprises, we redefine beauty standards through a fusion of sophisticated artistry and state-of-the-art techniques. Our sanctuary of style is dedicated to crafting bespoke looks that empower your confidence and reflect your unique personality.\n\nWe specialize in high-end hairstyling, precision barbing for all ages, and advanced beauty treatments including professional wig installations and medical-grade facial care. At Splendour Vites, your wellness is our priority—experience luxury in an environment built on uncompromising hygiene and premium professional products.',
+      name: 'SPLENDOUR VITES LTD Beauty (Unisex) Saloon',
+      tagline: 'SPLENDOUR VITES LTD',
+      description: 'Step into a world of elite grooming and aesthetic perfection at SPLENDOUR VITES LTD Beauty (Unisex) Saloon. As a cornerstone of SPLENDOUR VITES LTD, we redefine beauty standards through a fusion of sophisticated artistry and state-of-the-art techniques. Our sanctuary of style is dedicated to crafting bespoke looks that empower your confidence and reflect your unique personality.\n\nWe specialize in high-end hairstyling, precision barbing for all ages, and advanced beauty treatments including professional wig installations and medical-grade facial care. At SPLENDOUR VITES LTD, your wellness is our priority—experience luxury in an environment built on uncompromising hygiene and premium professional products.',
       image: '/gallery/img1.jpg',
       additionalImages: ['/saloon-banner.jpg', '/saloon-logo-alt.jpg'],
       services: ['Professional Hairstyling', 'Barbing (Adults & Kids)', 'Wig & Frontal Installation', 'Manicure & Pedicure', 'Facial & Acne Treatment', 'Eyebrow Shaping & Microblading', 'Dreadlocks Maintenance', 'Bridal Styling'],
@@ -15,7 +15,7 @@ export const INITIAL_CONTENT: AppContent = {
     },
     {
       id: 'water',
-      name: 'Splendour Vites Table Water',
+      name: 'SPLENDOUR VITES LTD Table Water',
       tagline: 'Pure. Clean. Refreshing.',
       description: 'Our table water is produced under the highest standards of hygiene and quality assurance. We ensure that every drop is purified for your health and vitality.\n\nWe use advanced purification technologies and follow strict quality control protocols to ensure our water is safe for consumption. Our production facility is regularly inspected to maintain top hygiene standards.',
       image: '/table-water.jpg',
@@ -23,7 +23,7 @@ export const INITIAL_CONTENT: AppContent = {
     },
     {
       id: 'hair-products',
-      name: 'Splendour Vites Hair Products & Production',
+      name: 'SPLENDOUR VITES LTD Hair Products & Production',
       tagline: 'Professional Hair Care Solutions',
       description: 'We manufacture premium hair products designed for all hair types. Our formulas are crafted to promote growth, shine, and overall hair health.\n\nOur research and development team focuses on creating products that are safe, effective, and tailored to the needs of our diverse clientele. We use natural ingredients where possible to ensure your hair gets the best care.',
       image: '/hair-products.jpg',
@@ -31,7 +31,7 @@ export const INITIAL_CONTENT: AppContent = {
     },
     {
       id: 'pharmacy',
-      name: 'Splendour Vites Pharmacies & Store',
+      name: 'SPLENDOUR VITES LTD Pharmacies & Store',
       tagline: 'Your Health, Our Priority',
       description: 'Providing quality pharmaceutical products and health essentials. We focus on trust, safety, and the wellness of our community.\n\nOur pharmacy is stocked with authentic medications and health supplements. We have qualified professionals available to provide expert consultation and guidance for your health needs.',
       image: '/pharmacy.jpg',
@@ -40,14 +40,14 @@ export const INITIAL_CONTENT: AppContent = {
   ],
   hero: {
     title: "Premium Quality. Exceptional Service. Diverse Solutions.",
-    tagline: "Splendour Vites Enterprises",
-    description: "Splendour Vites Enterprises is your trusted partner for premium beauty, health, and lifestyle products. We are committed to excellence across all our specialized business units.",
+    tagline: "SPLENDOUR VITES LTD",
+    description: "SPLENDOUR VITES LTD is your trusted partner for premium beauty, health, and lifestyle products. We are committed to excellence across all our specialized business units.",
     bgImage: "/hero-1.jpg",
     showRating: true
   },
   about: {
-    title: "About Splendour Vites Enterprises",
-    description: "Splendour Vites Enterprises is a diversified conglomerate dedicated to delivering excellence across multiple industries. From our flagship Unisex Salon providing premium grooming to our high-standard Table Water production, Hair Product manufacturing, and community-focused Pharmacies, we prioritize quality, trust, and customer satisfaction in everything we do. Our mission is to enhance lives through professional services and premium products that meet the highest standards of safety and hygiene.",
+    title: "About SPLENDOUR VITES LTD",
+    description: "SPLENDOUR VITES LTD is a diversified conglomerate dedicated to delivering excellence across multiple industries. From our flagship Unisex Salon providing premium grooming to our high-standard Table Water production, Hair Product manufacturing, and community-focused Pharmacies, we prioritize quality, trust, and customer satisfaction in everything we do. Our mission is to enhance lives through professional services and premium products that meet the highest standards of safety and hygiene.",
     image: "/hero-2.jpg",
   },
   contact: {
@@ -82,7 +82,7 @@ export const INITIAL_CONTENT: AppContent = {
       contact: true
     },
     seo: {
-      title: "Splendour Vites Enterprises",
+      title: "SPLENDOUR VITES LTD",
       description: "Premium beauty, health, and lifestyle solutions in Agbor, Delta State."
     }
   },

@@ -15,7 +15,7 @@ const About: React.FC = () => {
             <div className="flex flex-col gap-4">
               <img 
                 src={content.about.image} 
-                alt="Splendour Vites Enterprises" 
+                alt="SPLENDOUR VITES LTD" 
                 className="rounded-2xl shadow-lg w-full h-96 object-cover"
               />
             </div>

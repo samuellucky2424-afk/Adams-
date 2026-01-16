@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0 z-0">
         <img 
           src={hero.bgImage} 
-          alt="Splendour Vites Enterprises" 
+          alt="SPLENDOUR VITES LTD" 
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/40 sm:from-black/70 sm:to-transparent"></div>

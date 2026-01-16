@@ -1,7 +1,7 @@
-# Splendour Vites Beauty Saloon
+# SPLENDOUR VITES LTD
 
 ## Overview
-A React-based website for Splendour Vites Beauty (Unisex) Saloon. This is a frontend-only single-page application built with React, TypeScript, and Vite.
+A React-based website for SPLENDOUR VITES LTD. This is a frontend-only single-page application built with React, TypeScript, and Vite.
 
 ## Tech Stack
 - **Frontend Framework**: React 18.2

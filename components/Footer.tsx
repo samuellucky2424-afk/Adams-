@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0 text-center md:text-left">
             <h3 className="font-serif text-2xl font-bold text-white mb-2">
-               Splendour Vites Enterprises
+               SPLENDOUR VITES LTD
             </h3>
             <p className="text-gray-500 text-sm max-w-xs mb-4">{content.hero.tagline}</p>
             <p className="text-gray-400 text-xs italic">Like and follow our pages on Facebook, Instagram, YouTube, and TikTok!</p>
@@ -65,7 +65,7 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500 text-sm">
-          <p>&copy; {new Date().getFullYear()} Splendour Vites Enterprises. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} SPLENDOUR VITES LTD. All rights reserved.</p>
         </div>
       </div>
     </footer>
